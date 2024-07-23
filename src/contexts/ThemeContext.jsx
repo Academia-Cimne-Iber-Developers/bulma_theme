@@ -1,7 +1,7 @@
 import { createContext, useReducer } from "react";
 import reducer from "./reducer";
 import { ACTIONS } from "./actions";
-//import PropTypes from "prop-types";
+import PropTypes from "prop-types";
 
 const ThemeContext = createContext();
 
@@ -30,12 +30,12 @@ function ThemeProvider({
     );
 }
 
-// ThemeProvider.propTypes = {
-//     initialTheme: PropTypes.shape({
-//         primary: PropTypes.string,
-//         secondary: PropTypes.string,
-//     }),
-//     children: PropTypes.node,
-// };
+ThemeProvider.propTypes = {
+    initialTheme: PropTypes.shape({
+        primary: PropTypes.string,
+        secondary: PropTypes.string,
+    }),
+    children: PropTypes.node,
+};
 
 export { ThemeContext, ThemeProvider };
