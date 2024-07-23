@@ -1,3 +1,17 @@
+import ThemePicker from "./components/ThemePicker";
+import { useTheme } from "./hooks/useTheme";
+
 export default function App() {
-    return <h1>Hello World!</h1>;
+    const { primary, secondary } = useTheme("state");
+
+    return (
+        <div className="container">
+            <ThemePicker />
+            <div className={`box m-4 p-4 has-background-${primary}`}>
+                <h1 className={`title is-1 has-text-${secondary}`}>
+                    Theme Switcher
+                </h1>
+            </div>
+        </div>
+    );
 }

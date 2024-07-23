@@ -1,19 +1,27 @@
 {
-  "name": "bulma_theme",
-  "private": true,
-  "version": "0.0.0",
-  "type": "module",
-  "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "preview": "vite preview"
-  },
-  "devDependencies": {
-    "@vitejs/plugin-react-swc": "^3.7.0",
-    "vite": "^5.3.4"
-  },
-  "dependencies": {
-    "react": "^18.3.1",
-    "react-dom": "^18.3.1"
-  }
+    "name": "@teishi/bulma_theme",
+    "version": "0.0.0",
+    "type": "module",
+    "scripts": {
+        "dev": "vite",
+        "build": "vite build",
+        "preview": "vite preview"
+    },
+    "devDependencies": {
+        "@vitejs/plugin-react-swc": "^3.7.0",
+        "vite": "^5.3.4"
+    },
+    "dependencies": {
+        "react": "^18.3.1",
+        "react-dom": "^18.3.1"
+    },
+    "description": "Un tema de Bulma mediante contexto en React+Vite",
+    "main": "./dist/theme-context.umd.js",
+    "module": "./dist/theme-context.es.js",
+    "exports": {
+        ".": {
+            "import": "./dist/theme-context.es.js",
+            "require": "./dist/theme-context.umd.js"
+        }
+    }
 }
