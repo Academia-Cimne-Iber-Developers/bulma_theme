@@ -16,12 +16,12 @@
         "react-dom": "^18.3.1"
     },
     "description": "Un tema de Bulma mediante contexto en React+Vite",
-    "main": "./dist/theme-context.umd.js",
-    "module": "./dist/theme-context.es.js",
+    "main": "./dist/bulma-theme.umd.js",
+    "module": "./dist/bulma-theme.es.js",
     "exports": {
         ".": {
-            "import": "./dist/theme-context.es.js",
-            "require": "./dist/theme-context.umd.js"
+            "import": "./dist/bulma-theme.es.js",
+            "require": "./dist/bulma-theme.umd.js"
         }
     }
 }
